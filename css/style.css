@@ -1,0 +1,498 @@
+@font-face
+{
+    src: url("../fonts/RobotoMono-Regular.ttf");
+    font-family: "Roboto Mono";
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Roboto Mono', monospace;
+}
+
+body
+{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+header
+{
+    height: 92vh;
+    position: relative;
+    background: url('../img/herbertheader.jpg') no-repeat center center;
+}
+
+header > h1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 300%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: 400;
+}
+
+header > p
+{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 150%;
+    transform: translateX(-50%);
+    color: white;
+
+    display: block;
+
+    font-weight: bold;
+}
+
+.textArticleStore
+{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding: 80px 0px;
+    grid-column: 1/4;
+}
+
+.textArticleBlock
+{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding: 80px 0px;
+    grid-column: 1/4;
+}
+
+main
+{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 80px 0px;
+
+    /*background-color: eenkleur;*/
+}
+
+main > p
+{
+    font-weight: 400;
+    color: gray;
+}
+
+main > hr
+{
+    grid-column: 1/4;
+}
+
+footer
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer > p
+{
+    font-weight: 400;
+    font-size: 110%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav
+{
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+
+    z-index: 999;
+}
+
+nav > ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav > ul > li
+{
+    float: left;
+    /*display: block;*/
+    /* padding: 14px 20px; */
+}
+
+
+
+nav > ul > li > a
+{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 7px 20px; /*Padding */
+}
+
+nav > ul > li:hover
+{
+    background-color: #f3f3f3;
+    transition: 0.3s all;
+}
+
+nav > ul > li:hover > a
+{
+    background-color: #f3f3f3;
+    transition: 0.3s all;
+    color: #333;
+}
+
+.active
+{
+    background-color: lightslategray;
+}
+
+
+.kopjeText
+{
+    font-weight: 400;
+    font-size: 200%;
+    text-align: center;
+}
+
+.titelText
+{
+    font-weight: bold;
+    font-size: 200%;
+    text-align: center;
+    color: gray;
+}
+
+/* Rechts */
+
+.textArticleRechts
+{
+    grid-column: 2/4;
+}
+
+.textArticleRechts > p
+{
+    margin: 40px 40px;
+}
+
+/* Links */
+
+.textArticleLinks
+{
+    grid-column: 1/3;
+}
+
+.textArticleLinks > p
+{
+    margin: 40px 40px;
+}
+
+/* 3 Breed */
+
+.textArticleVol
+{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.textArticleVol > h1
+{
+    font-size: 400%;
+    color: gray;
+}
+
+.shopitemsHeader
+{
+    grid-column: 1/4;
+    text-align: center;
+    border-bottom: 2px gray solid;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.shopitemsHeader > h1
+{
+    font-size: 400%;
+    color: gray;
+}
+
+/* Slideshow */
+
+.slideshow
+{
+    grid-column: 1/4;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-height: 563px;
+}
+
+.slideshow-slide
+{
+    display: none;
+}
+
+.slideshow-slide > img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+
+}
+
+.slideshow-slide > section
+{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+hr
+{
+    margin-bottom: 20px;
+}
+
+.product
+{
+    border: gray solid 1px;
+    border-radius: 2px;
+    padding: 8px 8px 8px 8px;
+
+    transform: scale(1);
+    transition: all 0.1s;
+}
+
+.product > img
+{
+    width: 100%;
+}
+
+.product:hover
+{
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+.product > h1
+{
+    font-weight: 400;
+    color: #696969;
+}
+
+.productPrijs
+{
+    font-weight: 200;
+    color: #778899;
+    
+    
+
+    border-bottom: 2px solid gray;
+}
+
+.productBeschrijving
+{
+    
+    font-size: 0.83em;
+    font-weight: bold;
+}
+
+
+/* overlay & popup */
+
+.overlay
+{
+    visibility: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+    background-color: black;
+
+    z-index: 1000;
+    top: 0;
+
+    transition: all 0.2s;
+}
+
+.popup
+{
+    visibility: hidden;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 2px;
+    max-width: 450px;
+    height: auto;
+    background-color: white;
+    z-index: 1000;
+    opacity: 1.0;
+    transition: all 0.2s;
+
+    border-radius: 4px;
+    border: 4px solid #696969;
+    padding: 12px 12px;
+}
+
+.popup > h2
+{
+    opacity: 1;
+}
+
+#titel
+{
+    border-bottom: 2px gray solid;
+}
+
+#beschrijving
+{
+    margin-bottom: 10px;
+}
+
+.portretFoto
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/* Fading animatie */
+.fade
+{
+    animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+  }
+
+@-webkit-keyframes fade
+{
+    to {opacity: 1}
+    from {opacity: .4}
+}
+
+@keyframes fade
+{
+    to {opacity: 1}
+    from {opacity: .4}
+}
+
+@media only screen and (max-width: 820px)
+{
+    main, footer
+    {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        margin: 10px 10px;
+    }
+
+    .textArticleRechts
+    {
+        grid-column-start: 1;
+        grid-column: 1/1;
+    }
+
+    header > h1
+    {
+        top: 30%;
+    }
+
+    .kopjeText
+    {
+        grid-column-start: 1;
+    }
+    .textArticleLinks
+    {
+        grid-column-start: 1;
+    }
+
+    .product
+    {
+        grid-column-start: 1;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .popup
+    {
+        width: 90%;
+    }
+
+    .textArticleEnkel
+    {
+        grid-column-start: 1;
+    }
+
+    .textArticleStore, .textArticleBlock
+    {
+        grid-column: 1/1;
+        grid-template-columns: 1fr;
+    }
+    
+
+    .portretFoto
+    {
+        margin-top: 20px;
+        grid-column-start: 1;
+    }
+
+    .slideshow
+    {
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .slideshow-slide > img
+    {
+        width: 95vh;
+    }
+
+    /*Nav Bar Mobile*/
+    nav > ul
+    {
+        list-style-type: none;
+        margin: 0;
+        width: 100%;        
+    }
+
+
+
+    nav > ul > li
+    {
+        display: block;
+        text-decoration: none;
+        float: none;
+        
+    }
+}

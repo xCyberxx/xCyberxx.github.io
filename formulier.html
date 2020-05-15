@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" type="text/css" href="css/form.css">
+        <title>Herbert von Karajan - Bestel Formulier</title>
+        <script src="js/formulier.js"></script>
+    </head>
+
+    <body>
+
+        <nav>
+            <!--De navigatie bar-->
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="index.html#wie" >Wie</a></li>
+                <li><a href="index.html#vooroorlog" >Vóór oorlog</a></li>
+                <li><a href="index.html#oorlog" >Tijdens oorlog</a></li>
+                <li><a href="index.html#berliner" >Berliner Philharmoniker</a></li>
+                <li class="active"><a href="store.html">Store</a></li>
+            </ul>
+        </nav>
+
+
+
+      <!-- REVIEW: navigatie ontbreekt -->
+        <main>
+
+            <section class="productForm">
+                <section class="formHeader">
+                    <img id="foto" src="img/products/baroquefavorites.jpg" alt="Foto van geselecteerde product">
+                    <h1 id="titel"></h1>
+                    <p id="beschrijving"></p>
+                    
+                    <p id="prijs"></p>
+                </section>
+                
+                <section>
+                    <form action="index.html">
+                        <label for="vname">Voornaam</label><br>
+                        <input type="text" id="vname" name="vname" placeholder="Voornaam" required><br>
+                        <label for="aname">Achternaam</label><br>
+                        <input type="text" id="aname" name="aname" placeholder="Achternaam" required><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" placeholder="email@outlook.com" required><br>
+                        <label for="tel">Telefoonnummer</label><br>
+                        <input type="tel" id="tel" name="tel" placeholder="Telefoonnummer" required><br>
+
+
+                        <label for="adres">Adres</label><br>
+                        <input type="text" id="adres" placeholder="Adres" required><br>
+                        <label for="postcode">Postcode</label><br>
+                        <input id="postcode" name="postcodecijfers" type="number" placeholder="4 nummers" required/> <br>
+                        <input type="text" name="postcodeletters" pattern="[A-Z]{2}" placeholder="2 hoofdletters" required/><br>
+
+
+                        
+                        <input type="submit" value="Bestel">
+                    </form>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

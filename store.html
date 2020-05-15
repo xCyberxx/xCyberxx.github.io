@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Herbert von Karajan - Store</title>
+        <script src="js/productloader.js"></script>
+    </head>
+
+    <body>
+
+        <section class="overlay" id="idoverlay" style="visibility: hidden;"></section>
+        <section class="popup" id="idpopup" style="visibility: hidden;">
+            <h1 id="titel">Karajan</h1>
+            <!--<hr>REVIEW: heeft de hr hier echt een semantische betekenis, of is het meer styling? Gebruik in het laatste geval gewoon CSS met border-bottom -->
+            <p id="beschrijving"></p>
+            <button id="bestelknop" >Kopen &euro; 0.00</button>
+            <button id="sluitknop" onclick="sluitOverlay()">Sluiten</button>
+        </section>
+
+        <!--
+        <header>
+            <h1>Herbert von Karajan</h1>
+            <h2>(1908-1989)</h2>
+        </header>
+        -->
+        <nav>
+            <!--De navigatie bar-->
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="index.html#wie" >Wie</a></li>
+                <li><a href="index.html#vooroorlog" >Vóór oorlog</a></li>
+                <li><a href="index.html#oorlog" >Tijdens oorlog</a></li>
+                <li><a href="index.html#berliner" >Berliner Philharmoniker</a></li>
+                <li class="active"><a href="store.html">Store</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- CSS Grid met informatie 'blokken'-->
+
+            <article class="textArticleStore">
+                <h1 class="titelText">Muziek</h1>
+                <p>Herbert von Karajan was over het algemeen beschouwd als een van de grootste dirigenten van de 20e eeuw. Een deel van de reden hiervoor was het grote aantal opnames dat hij maakte en hun bekendheid tijdens zijn leven. Volgens een schattig was hij dé bestverkopende artiest in klassieke muziek aller tijden, met naar schatting 200 miljoen platen die verkocht zijn.</p>
+                <img src="img/store.jpg" alt="Foto van von Karajan" class="portretFoto"><!-- REVIEW: deze foto hoort semantisch gezien in de article -->
+            </article>
+
+            <section class="shopitemsHeader">
+                <h1>Shop</h1>
+            </section>
+
+            
+
+            <!--Winkel Items-->
+
+        </main>
+    </body>
+
+</html>
